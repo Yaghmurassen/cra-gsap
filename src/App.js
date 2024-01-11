@@ -1,11 +1,21 @@
-import "./App.scss";
+import { useRef } from "react";
 
-function App() {
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+export default function App() {
+  const container = useRef();
+
+  useGSAP(
+    () => {
+      gsap.to(".box", { rotation: 360, duration: 2, delay: 1 });
+    },
+    { scope: container }
+  );
+
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div ref={container} className="app">
+      <div className="box text-center">Hello</div>
     </div>
   );
 }
-
-export default App;
