@@ -2,7 +2,8 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import styles from "../style/ScrollBoxes.module.scss";
+// import styles from "../style/ScrollBoxes.module.css";
+import "../App.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,12 +40,16 @@ export default function Scroll() {
         className="w-full h-screen flex justify-center items-center gap-4 flex-col"
         ref={main}
       >
+        {/* <div className={`${styles.box} text-blue-500`}>box</div>
         <div className={`${styles.box} text-blue-500`}>box</div>
-        <div className={`${styles.box} text-blue-500`}>box</div>
-        <div className={`${styles.box} text-blue-500`}>box</div>
-        {/* <div className="box text-blue-500">box</div>
+        <div className={`${styles.box} text-blue-500`}>box</div> */}
+        {/* <div className={styles.box}>box</div> */}
+        <div className="box flex w-[75px] h-[75px] bg-green-500 rounded-xl items-center text-center p-4 text-blue-500">
+          box
+        </div>
         <div className="box text-blue-500">box</div>
-        <div className="box text-blue-500">box</div> */}
+        <div className="box text-blue-500">box</div>
+        <div className="box text-blue-500">box</div>
       </div>
       <section className="w-full h-screen"></section>
     </div>
