@@ -1,21 +1,15 @@
-import { useRef } from "react";
+import ScrollHorizontal from "./components/ScrollHorizontal";
+import ScrollBoxes from "./components/ScrollBoxes";
+import RotateText from "./components/RotateText";
 
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
+import "./App.scss";
 
 export default function App() {
-  const container = useRef();
-
-  useGSAP(
-    () => {
-      gsap.to(".box", { rotation: 360, duration: 2, delay: 1 });
-    },
-    { scope: container }
-  );
-
   return (
-    <div ref={container} className="app">
-      <div className="box text-center">Hello</div>
+    <div className="app">
+      {/* <RotateText /> */}
+      <ScrollHorizontal />
+      <ScrollBoxes />
     </div>
   );
 }
