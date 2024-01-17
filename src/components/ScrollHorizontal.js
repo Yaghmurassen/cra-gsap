@@ -12,11 +12,12 @@ const ScrollHorizontal = () => {
 
     const sections = document.querySelectorAll(".h-section");
 
-    console.log("window.innerWidth : ", window.innerWidth);
-
     sections.forEach((section, index) => {
       gsap.to(section, {
-        x: () => `-${window.innerWidth * index}px`,
+        x: () =>
+          index === 0
+            ? `-${window.innerWidth}px`
+            : `-${window.innerWidth * index}px`,
         ease: "none",
         scrollTrigger: {
           trigger: section,

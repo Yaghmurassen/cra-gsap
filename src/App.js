@@ -2,7 +2,7 @@ import ScrollHorizontal from "./components/ScrollHorizontal";
 import ScrollBoxes from "./components/ScrollBoxes";
 import RotateText from "./components/RotateText";
 
-// import "./App.scss";
+import "./App.scss";
 
 export default function App() {
   return (
