@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="app">
       {/* <RotateText /> */}
-      {/* <ScrollHorizontal /> */}
+      <ScrollHorizontal />
       {/* <ScrollBoxes /> */}
     </div>
   );

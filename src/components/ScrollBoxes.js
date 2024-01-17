@@ -2,8 +2,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import styles from "../style/ScrollBoxes.module.css";
-// import "../App.scss";
+import styles from "../style/ScrollBoxes.module.scss";
 
 gsap.registerPlugin(ScrollTrigger);
 

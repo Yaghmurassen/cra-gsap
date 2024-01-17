@@ -1,0 +1,16 @@
+.horizontal_section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(1) {
+    background: red;
+  }
+  &:nth-child(2) {
+    background: green;
+  }
+  &:nth-child(3) {
+    background: blue;
+  }
+}
