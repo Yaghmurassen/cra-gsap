@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useLayoutEffect } from "react";
 import { gsap, ScrollTrigger } from "gsap/all";
 import styles from "../style/ScrollSection.module.scss";
 
@@ -15,7 +15,7 @@ function ScrollSection() {
         translateX: 0,
       },
       {
-        translateX: "-300vw",
+        translateX: "-400vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {

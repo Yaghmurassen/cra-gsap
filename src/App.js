@@ -1,6 +1,6 @@
 import ScrollSection from "./components/ScrollSection";
 // import ScrollHorizontal from "./components/ScrollHorizontal";
-// import ScrollBoxes from "./components/ScrollBoxes";
+import ScrollBoxes from "./components/ScrollBoxes";
 // import RotateText from "./components/RotateText";
 
 import "./App.scss";
@@ -11,7 +11,7 @@ export default function App() {
       <ScrollSection />
       {/* <RotateText /> */}
       {/* <ScrollHorizontal /> */}
-      {/* <ScrollBoxes /> */}
+      <ScrollBoxes />
     </div>
   );
 }
