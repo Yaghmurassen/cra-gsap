@@ -25,10 +25,37 @@ const ScrollHorizontal = () => {
           end: `+=${window.innerWidth}`,
           scrub: true,
           markers: true,
+          // pin: true,
         },
       });
+      ScrollTrigger.refresh();
     });
   }, []);
+
+  // useEffect(() => {
+  //   // This does not seem to work without a settimeout
+  //   setTimeout(() => {
+  //     console.log(ref.current.offsetWidth);
+  //     console.log(ref.current.clientWidth);
+  //     console.log({ current: ref.current });
+  //     let sections = gsap.utils.toArray(".gallery-item-wrapper");
+
+  //     gsap.to(sections, {
+  //       xPercent: -100 * (sections.length - 1),
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         start: "top top",
+  //         trigger: ref.current,
+  //         scroller: "#main-container",
+  //         pin: true,
+  //         scrub: 0.5,
+  //         snap: 1 / (sections.length - 1),
+  //         end: () => `+=${ref.current.offsetWidth}`,
+  //       },
+  //     });
+  //     ScrollTrigger.refresh();
+  //   });
+  // }, []);
 
   //// Comment récupérer l'index de l'item en court d'itération ?
 
